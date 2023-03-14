@@ -1,0 +1,32 @@
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "email": "Louis@Tomlinson.com",
+    "name": "Louis Tomlinson",
+    "password": "banana",
+    "role": "ADMIN"
+}
+
+###
+// LOGIN USER
+POST http://localhost:3003/users/login
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE0YjY2ZjMxLWFiMzAtNGI0ZC1hMjg3LTVkN2EyMTdlNDVlZiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY3ODgzNDQyMCwiZXhwIjoxNjgxNDI2NDIwfQ.M0KbVMPJxi5AXmdjqRVLYCGHSYej6bjuzf_Gy6-bPQo
+
+{
+    "email": "Louis@Tomlinson.com",
+    "password": "banana"
+}
+
+###
+// CREATE BAND
+POST http://localhost:3003/band/create
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE0YjY2ZjMxLWFiMzAtNGI0ZC1hMjg3LTVkN2EyMTdlNDVlZiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY3ODgzNDQzOCwiZXhwIjoxNjgxNDI2NDM4fQ.kSJccYZ_iFWwGA-5DA50mQliGdKdHg5dT6Z9mkajwo4
+
+{
+    "name": "One Direction",
+    "music_genre": "POP",
+    "responsible": "a4b66f31-ab30-4b4d-a287-5d7a217e45ef"
+}
