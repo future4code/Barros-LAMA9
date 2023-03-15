@@ -28,4 +28,16 @@ export class BandBusiness{
             throw new Error(error.message)
         }
     }
+
+    public bandDetails = async (id:string)=>{
+        try{
+            const id_band = id
+
+            const bandDatabase = new BandDatabase()
+            await bandDatabase.bandDetais(id_band)
+
+        }catch(error:any){
+            throw new Error(error.message)
+        }
+    }
 }

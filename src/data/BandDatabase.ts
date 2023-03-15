@@ -15,4 +15,18 @@ export class BandDatabase extends BaseDatabase{
             throw new Error(error.message)
         }
     }
+
+    public bandDetais = async (id:string) =>{
+        try{
+            const band = await BaseDatabase.connection()
+                .select("*")
+                .from(BandDatabase.NOME_TABELA_BANDAS)
+                .where({id})
+
+            return band
+
+        }catch(error:any){
+            throw new Error(error.message)
+        }
+    }
 }
