@@ -30,3 +30,8 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE0YjY2ZjMxLWFiMzAt
     "music_genre": "POP",
     "responsible": "a4b66f31-ab30-4b4d-a287-5d7a217e45ef"
 }
+
+###
+// GET DETAILS BAND
+GET http://localhost:3003/band/get-details/2416a526-8ee3-49c7-ad4a-5f11bd89b7ef
+Content-Type: application/json
