@@ -34,7 +34,7 @@ export class BandBusiness{
             const id_band = id
 
             const bandDatabase = new BandDatabase()
-            await bandDatabase.bandDetais(id_band)
+            await bandDatabase.bandDetails(id_band)
 
         }catch(error:any){
             throw new Error(error.message)
