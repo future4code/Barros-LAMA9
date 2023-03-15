@@ -16,7 +16,7 @@ export class BandDatabase extends BaseDatabase{
         }
     }
 
-    public bandDetais = async (id:string) =>{
+    public bandDetails = async (id:string) =>{
         try{
             const band = await BaseDatabase.connection()
                 .select("*")
