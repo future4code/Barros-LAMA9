@@ -28,11 +28,11 @@ export class ShowDatabase extends BaseDatabase{
         }
      }
 
-     public findShowHour = async (hour:string) =>{
+     public findShowHour = async (start_time:string) =>{
         try{
             const result = await ShowDatabase.connection(ShowDatabase.NOME_TABELA_SHOWS)
                 .select()
-                .where(`start_time = ${hour}`)
+                .where({start_time})
 
             return result[0]
 
