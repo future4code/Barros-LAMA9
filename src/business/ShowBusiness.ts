@@ -40,12 +40,10 @@ export class ShowBusiness {
             }
 
             const showDatabase = new ShowDatabase()
-            const showExistId = await showDatabase.findShowId(band_id)
-            console.log("ID",showExistId)
+
             const showExistHour = await showDatabase.findShowHour(start_time)
-            console.log("HORA",showExistHour)
             
-            if(showExistId && showExistHour){
+            if( showExistHour){
                 throw new Error("Show já cadastrado")
             }
 
