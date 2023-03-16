@@ -35,3 +35,16 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE0YjY2ZjMxLWFiMzAt
 // GET DETAILS BAND
 GET http://localhost:3003/band/get-details/2416a526-8ee3-49c7-ad4a-5f11bd89b7ef
 Content-Type: application/json
+
+###
+// CREATE SHOW
+POST http://localhost:3003/show/create
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE0YjY2ZjMxLWFiMzAtNGI0ZC1hMjg3LTVkN2EyMTdlNDVlZiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY3ODgzNDQzOCwiZXhwIjoxNjgxNDI2NDM4fQ.kSJccYZ_iFWwGA-5DA50mQliGdKdHg5dT6Z9mkajwo4
+
+{
+    "week_day": "sábado",
+    "start_time": "8",
+    "end_time": "10",
+    "band_id": "2416a526-8ee3-49c7-ad4a-5f11bd89b7ef"
+}
