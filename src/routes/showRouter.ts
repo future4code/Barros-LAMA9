@@ -8,3 +8,4 @@ export const showRouter = express.Router();
 const showController = new ShowController();
 
 showRouter.post("/create", showController.createShow);
+showRouter.get("/get-show/:week_day", showController.getShow)

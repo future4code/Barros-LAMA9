@@ -19,7 +19,7 @@ export class ShowBusiness {
             if(end_time < "8" && end_time > "23"){
                 throw new Error("Horário inválido - O show deve acontecer entre 8h a 23h")
             }
-
+/*
             if( start_time !== "8" && "9"&&"10"&&"11"&&"12"&&"13"&&"14"&&"15"&&"16"&&"17"&&"18"&&"19"&&"20"&&"21"){
                 throw new Error("Horário inválido - Você pode escolher entre esses horários: 8h, 9h, 10h, 11h, 12h, 13h, 14h, 15h, 16h, 17h, 18h, 19h, 20h, 21h")
             }
@@ -27,7 +27,7 @@ export class ShowBusiness {
             if( end_time !== "10"&&"11"&&"12"&&"13"&&"14"&&"15"&&"16"&&"17"&&"18"&&"19"&&"20"&&"21"&&"22"&&"23"){
                 throw new Error("Horário inválido - Você pode escolher entre esses horários: 10h, 11h, 12h, 13h, 14h, 15h, 16h, 17h, 18h, 19h, 20h, 21h, 22h, 23h")
             }
-            
+*/            
             const idGenerator = new IdGenerator()
             const id = idGenerator.generate()
 
@@ -52,6 +52,19 @@ export class ShowBusiness {
         } catch (error: any) {
             throw new Error(error.message)
 
+        }
+    }
+
+    public getShow = async (week_day:string) =>{
+        try{
+            const input = week_day
+
+            const showDatabase = new ShowDatabase()
+            const result = await showDatabase.getShow(input)
+            return result
+
+        }catch(error:any){
+            throw new Error(error.message)
         }
     }
 }

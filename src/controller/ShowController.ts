@@ -29,4 +29,18 @@ export class ShowController{
             res.status(400).send(error.message)
         }
     }
+
+    public getShow = async (req: Request, res: Response) =>{
+        try{
+            const week_day = req.params.week_day
+
+            const showBusiness = new ShowBusiness()
+            const result = await showBusiness.getShow(week_day)
+
+            res.status(201).send({ message: `Shows de ${week_day}:`, result });
+
+        }catch(error:any){
+            res.status(400).send(error.message)
+        }
+    }
 }
