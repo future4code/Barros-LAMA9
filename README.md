@@ -8,8 +8,8 @@ Projeto individual desenvolvido no back-end da Labenu. Com o objetivo de criar a
 ## Link Deploy Render
 https://barros-lama9.onrender.com
 
-## Link da documentação
-
+## Link da documentação (obs: alguns não funcionaram com o postman, porém no código funciona)
+https://documenter.getpostman.com/view/22349689/2s93K1oezk
 
 ## :wrench: Tecnologias utilizadas
 * VS Code
