@@ -1,4 +1,43 @@
-# Labenu Music Awards
-Como você deve saber muito bem, o nosso querido chefinho Astrodev é uma pessoa com Networking incrível e ele conhece vários artistas estrelados. Além disso, ele também é um grande ~~megalomaníaco~~ visionário e está planejando fazer um grande evento: o **LAMA**, *Labenu Musical Awards*, um festival  com várias bandas famosas para a formatura da sua turma e, no final, vocês podem eleger a banda que mais gostaram! Entretanto, na opinião dele, vocês só serão merecedores se entregarem um sistema impecável que permita o gerenciamento completo desses shows.
+# Barros-LAMA9
+## :memo: Descrição
+Projeto individual desenvolvido no back-end da Labenu. Com o objetivo de criar as funções básicas de um sistema fictício de cadastro de usuários, bandas e shows para um evento.
 
-Para isso já deixamos algumas tabelas prontas para vocês não precisarem se preocupar com a modelagem do banco. Deixamos também um template do projeto já com a estrutura da parte de usuários. Vocês podem usá-las a vontade, mas, se quiser fazer do zero sem esse auxílio, também pode.
+## Pessoa desenvolvedora do projeto
+<img src="https://avatars.githubusercontent.com/u/102320940?v=4" width=115><br><h4>Jéssica Oliveira de Lima</h4>
+
+## Link Deploy Render
+https://barros-lama9.onrender.com
+
+## Link da documentação (obs: alguns não funcionaram com o postman, porém no código funciona)
+https://documenter.getpostman.com/view/22349689/2s93K1oezk
+
+## :wrench: Tecnologias utilizadas
+* VS Code
+* nodeJS
+* expressJS
+* cors
+* dotenv
+* MySQL
+* Arquitetura em 3 camadas (controller, business, data) 
+
+
+## :rocket: Rodando o projeto
+Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para instalar as dependências:
+```
+npm install
+```
+Após instaladas as dependências, configure o arquivo .env:
+```
+DB_HOST = 
+DB_USER = ""
+DB_PASS = ""
+DB_NAME = ""
+```
+Após configuração do .env, rode o arquivo queries.sql para a criação das tabelas no banco de dados SQL
+
+Após criar as tabelas, dê o comando seguinte para rodar a aplicação:
+```
+npm run start
+```
+
+Use o Postman para realizar as requisições desejadas.

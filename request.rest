@@ -1,0 +1,54 @@
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "email": "kurt@nirvana.com",
+    "name": "Kurt Cobain",
+    "password": "banana",
+    "role": "ADMIN"
+}
+
+###
+// LOGIN USER
+POST http://localhost:3003/users/login
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE0YjY2ZjMxLWFiMzAtNGI0ZC1hMjg3LTVkN2EyMTdlNDVlZiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY3ODgzNDQyMCwiZXhwIjoxNjgxNDI2NDIwfQ.M0KbVMPJxi5AXmdjqRVLYCGHSYej6bjuzf_Gy6-bPQo
+
+{
+    "email": "Louis@Tomlinson.com",
+    "password": "banana"
+}
+
+###
+// CREATE BAND
+POST http://localhost:3003/band/create
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyNDE2NGViLTBlODktNGY1ZC1iMjNiLTVjOWI1MDhiYWEwOCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY3OTAxMjgyMiwiZXhwIjoxNjgxNjA0ODIyfQ.nfHH7Ae08rfTq3ztVlFZBP-A0mBUoHm19CN0jrcU0vo
+
+{
+    "name": "Nirvana",
+    "music_genre": "Rock",
+    "responsible": "124164eb-0e89-4f5d-b23b-5c9b508baa08"
+}
+
+###
+// GET DETAILS BAND
+GET http://localhost:3003/band/get-details/2416a526-8ee3-49c7-ad4a-5f11bd89b7ef
+Content-Type: application/json
+
+###
+// CREATE SHOW
+POST http://localhost:3003/show/create
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE0YjY2ZjMxLWFiMzAtNGI0ZC1hMjg3LTVkN2EyMTdlNDVlZiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY3ODgzNDQzOCwiZXhwIjoxNjgxNDI2NDM4fQ.kSJccYZ_iFWwGA-5DA50mQliGdKdHg5dT6Z9mkajwo4
+
+{
+    "week_day": "sexta",
+    "start_time": 20,
+    "end_time": 22,
+    "band_id": "545a7683-a62a-42ee-9af2-0859b950d1c5"
+}
+
+###
+GET http://localhost:3003/show/get-show/sexta
+Content-Type: application/json
